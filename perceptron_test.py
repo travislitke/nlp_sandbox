@@ -77,7 +77,7 @@ for instance in tqdm(raw_test_data, desc="Featurizing test data"):
     vectorized = (feature_vector, label_vector)
     test_data.append(vectorized)
 
-perceptron = Perceptron.Perceptron(input_dim=3, bias=10)
+perceptron = Perceptron.Perceptron(input_dim=len(feature_vector), bias=10)
 perceptron.train(training_data, learning_rate=0.75)
 perceptron.evaluate(test_data)
 # end of file
