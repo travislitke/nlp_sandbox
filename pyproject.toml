@@ -1,0 +1,13 @@
+
+[project]
+name = 'homebrew-nlp'
+version = '0.0.1'
+readme = 'README.md'
+requires-python= ">=3.8"
+authors = [
+    {name='Travis Litke', email='travis.h.litke@gmail.com'}
+    ]
+
+dependencies = [
+    "json"
+    ]
